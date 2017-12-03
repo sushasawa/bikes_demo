@@ -1,0 +1,63 @@
+<div class="row">
+  <div class="col-xs-12 current-image-container">
+    <img src="{{currentImage.image}}" alt="{{currentImage.tag}}" title="{{currentImage.tag}}" class="img-responsive" style="max-height: 300px;">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class ="image-box" *ngFor="let image of bike.images" >
+    <img src="{{image.image}}" alt="{{image.tag}}" title="{{image.tag}}" (click)="changeImage($event)" class="img-responsive" style="max-height: 50px;">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>
+		{{bike.display_name}}
+	</h1>
+  </div>
+  <div class="col-xs-12">
+    <label>Selling Price</label>
+    <h3>
+     {{bike.display_price | currency:'INR':'₹'}}
+  </h3>
+  </div>
+</div>
+<div class="content bar details specs">
+<div class="title">Bike Details</div>
+<div class="row">
+  <div class="col-xs-12 element">
+    <label>Date</label><span>{{bike.created_date}}</span>
+  </div>
+  <div class="col-xs-12 element">
+    <label>Current Location</label><span>{{bike.current_location_name}}</span>
+  </div>
+  <div class="col-xs-12 element">
+    <label>Make</label><span>{{bike.make_name}}</span>
+  </div>
+  <div class="col-xs-12 element">
+    <label>Model</label><span>{{bike.vehicle_model_name}}</span>
+  </div>
+  <div class="col-xs-12 element">
+    <label>Variant</label><span>{{bike.variant_name}}</span>
+  </div>
+  <div class="col-xs-12 element">
+    <label>Kilometers Driven</label><span>{{bike.kms_driven}}</span>
+  </div>
+  <div class="col-xs-12 element">
+    <label>Years Old</label><span>{{bike.years_old}}</span>
+  </div>
+  <div class="col-xs-12 element">
+    <label>Year of Manufacture</label><span>{{bike.year_of_mfg}}</span>
+  </div>
+  <div class="col-xs-12 element">
+    <label>Outlet</label><span>{{bike.outlet}}</span>
+  </div>
+</div>
+</div>
+
+<div class="map-display">
+  <agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+</div>

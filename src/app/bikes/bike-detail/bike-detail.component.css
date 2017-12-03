@@ -1,0 +1,57 @@
+.element {
+	padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.current-image-container{
+	height: 310px;
+}
+
+.current-image-container .img-responsive {
+    margin: 0 auto;
+}
+
+.element label {
+    width: 47%;
+    padding-left: 15px;
+    margin-right: 10px;
+    color: #6f727b;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.element span {
+    width: 47%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.title {
+    margin-top: 10px;
+    color: #a2adbd;
+    font-size: 18px;
+}
+
+
+h3{
+	margin-top: 2px;
+}
+
+.content.specs {
+    padding-bottom: 100px;
+}
+
+.content.bar {
+    position: relative;
+    padding: 20px;
+    background: #f8f8f8;
+}
+
+.image-box{
+	padding: 5px;
+	display: inline-block;
+}
+
+agm-map {
+  height: 300px;
+}

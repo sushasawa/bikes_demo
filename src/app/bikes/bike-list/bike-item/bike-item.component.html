@@ -1,0 +1,9 @@
+<a href="#" class="list-group-item clearfix" (click) = "onSelected()">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{bike.display_name}}</h4>
+    <p class="list-group-item-text">{{bike.display_price | currency:'INR':'₹'}}</p>
+  </div>
+  <span class="pull-right">
+      	<img src="{{bike.images[0].image}}" alt="{{bike.images[0].tag}}" title="{{bike.images[0].tag}}" class="img-responsive" style="max-height: 100px;">
+      </span>
+</a>

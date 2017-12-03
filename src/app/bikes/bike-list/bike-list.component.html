@@ -1,0 +1,6 @@
+
+<div class="row bikes-list">
+  <div class="col-xs-12">    
+    <app-bike-item *ngFor="let bike of bikes" [bike]="bike" (selectedBike) = "onSelectedBike(bike)"></app-bike-item>
+  </div>
+</div>

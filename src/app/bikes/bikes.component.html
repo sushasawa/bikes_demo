@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-md-5">
+    <app-bike-list (wasSelectedBike) = "selectedBike = $event" ></app-bike-list>
+  </div>
+  <div class="col-md-7">
+    <app-bike-detail *ngIf="selectedBike" [bike]="selectedBike"></app-bike-detail>    
+  </div>
+</div>
